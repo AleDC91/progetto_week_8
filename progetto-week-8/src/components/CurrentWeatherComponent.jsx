@@ -12,7 +12,7 @@ import { changeBackground } from "../actions";
 
 export default function CurrentWeatherComponent({ currentWeather }) {
   const dispatch = useDispatch();
-  const weather = currentWeather.weather[0].main;
+
 
   return (
     <div className="weather-header">
@@ -23,7 +23,7 @@ export default function CurrentWeatherComponent({ currentWeather }) {
         </p>
         <p className="fs-1 p-0">
           {(() => {
-            switch (weather) {
+            switch (currentWeather.weather[0].main) {
               case "Clouds":
                 dispatch(changeBackground("/images/cloudy.jpg"));
                 return <BsClouds />;

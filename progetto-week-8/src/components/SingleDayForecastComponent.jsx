@@ -15,9 +15,13 @@ export default function SingleDayForecastComponent({ item, coordinates }) {
 
   const weather = item.weather[0].main;
 
+const day = item.dt_txt.split("-")[2].slice(0,2)
+const year = item.dt_txt.split("-")[0]
+const month = item.dt_txt.split("-")[1]
+
   return (
     <div className="single-day-forecast" onClick={() => navigate(`/${coordinates.latitude}/${coordinates.longitude}/${item.dt}`)}>
-      <p>{item.dt_txt.split(" ")[0]}</p>
+      <p className="fw-bold">{day}/{month}/{year}</p>
       <div className="d-flex align-items-center">
         <p className="m-0 me-3 p-0 fs-5">{Math.round(item.main.temp)} °C</p>
         <p className="fs-3 p-0">

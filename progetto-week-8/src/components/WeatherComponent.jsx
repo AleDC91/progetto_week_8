@@ -1,5 +1,4 @@
 import React from "react";
-import SingleDayForecastComponent from "./SingleDayForecastComponent";
 import CurrentWeatherComponent from "./CurrentWeatherComponent";
 import ForecastComponent from "./ForecastComponent";
 import "../styles/WeatherComponent.css";

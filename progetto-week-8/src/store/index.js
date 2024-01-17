@@ -4,7 +4,7 @@ import storeReducer from '../reducers'
 
 const initialState = {
     homeBackground: "",
-    pastSearch: []
+    pastSearch: [],
 }
 
 export const store = createStore(storeReducer, initialState) 
