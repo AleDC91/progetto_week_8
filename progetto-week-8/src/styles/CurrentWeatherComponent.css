@@ -1,0 +1,18 @@
+.weather-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin:  0 auto;
+    background: #ebebeb;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .weather-header{
+flex-direction: column;
+width: 90%;
+
+    }
+    
+}

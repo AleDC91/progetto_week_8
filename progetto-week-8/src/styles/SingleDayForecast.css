@@ -1,0 +1,7 @@
+.single-day-forecast{
+    background-color: #f7f7f7 !important;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
