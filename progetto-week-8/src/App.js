@@ -4,6 +4,7 @@ import NavbarComponent from "./components/NavbarComponent";
 import HomePage from "./pages/HomePage";
 import DayDetailPage from "./pages/DayDetailPage";
 import { Container } from "react-bootstrap";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/:latitude/:longitude/:dt" element={<DayDetailPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Container>
       </BrowserRouter>
